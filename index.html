@@ -2,13 +2,14 @@
 <html>
     <head>
         <title>Project Meta</title>
-
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
         <link href="style.css" rel = "stylesheet">
     </head>
     <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
         <header id="header">
                 <a href="#"><img id="header-img" alt="Project Meta logo" src="https://projectmeta.netlify.app/assets/images/logo.svg"> </img></a>
                 <nav id="nav-bar">
@@ -23,6 +24,9 @@
                 <h1> Building a Global Brain</h1>
                 <a class="anchor" id = "anchor1"></a>
                 <h2>About</h2>
+                <div class="iframe-container">
+                    <iframe src="https://www.youtube.com/embed/TfF3ShcD_ng" id = "video"></iframe>
+                </div>
                 <p> People assume creativity is a crazy outburst of original ideas. Actually, it is <strong> mixing and matching ideas you already know in a different context.</strong> When your brain <strong> creates a link between what you already know and a new context</strong>, that is an original insight.</p>
                 <p> Now imagine if you are able to <strong>map out links </strong>for all of your information, and <strong>see the links </strong>that your friends, family and strangers create. How many more ideas and insights you would have? </p>
                 <p> That's what Project Meta is about. You create links between information, and so will everyone around you. In doing so, you have a network of ideas from all contexts, domains and backgrounds. This helps you <strong> know more, learn more and create more.</strong></p>
@@ -117,12 +121,12 @@
                     </div>   
                 </div>
             </div>
-            <form id = "subscribe-button">
+            <form id = "form" action="https://www.freecodecamp.com/email-submit" >
                 <a class="anchor" id = "anchor4"></a>
                 <h2>Join the waitlist</h2>
-                <div id="subscribe-button-input">
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                    <input type = "submit" id="submit" href="https://www.freecodecamp.com/email-submit" class = "button-primary">
+                <div id="form-input">
+                    <input type="email" id="email" name = "email" placeholder="Enter your email address" required>
+                    <input type = "submit" id="submit" class = "button-primary">
                 </div>
             </form>
         </main>
